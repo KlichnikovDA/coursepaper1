@@ -1,0 +1,10 @@
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\bin\Release\Приложение курсовая.exe.config
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\bin\Release\Приложение курсовая.exe
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\bin\Release\Приложение курсовая.pdb
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\obj\Release\Приложение курсовая.csprojResolveAssemblyReference.cache
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\obj\Release\Приложение_курсовая.MainForm.resources
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\obj\Release\Приложение_курсовая.Properties.Resources.resources
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\obj\Release\Приложение курсовая.csproj.GenerateResource.Cache
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\obj\Release\Приложение курсовая.csproj.CoreCompileInputs.cache
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\obj\Release\Приложение курсовая.exe
+C:\Users\Денис\Desktop\Курсач\Приложение курсовая\Приложение курсовая\obj\Release\Приложение курсовая.pdb
