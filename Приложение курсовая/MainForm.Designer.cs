@@ -54,11 +54,14 @@
             this.bt_Mod = new System.Windows.Forms.Button();
             this.tb_RPNExpression = new System.Windows.Forms.TextBox();
             this.tb_Output = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tb_Input
             // 
-            this.tb_Input.Location = new System.Drawing.Point(15, 15);
+            this.tb_Input.Location = new System.Drawing.Point(18, 32);
             this.tb_Input.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Input.MaxLength = 20;
             this.tb_Input.Name = "tb_Input";
@@ -72,7 +75,7 @@
             // 
             // bt_Backspace
             // 
-            this.bt_Backspace.Location = new System.Drawing.Point(15, 108);
+            this.bt_Backspace.Location = new System.Drawing.Point(18, 154);
             this.bt_Backspace.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Backspace.Name = "bt_Backspace";
             this.bt_Backspace.Size = new System.Drawing.Size(36, 28);
@@ -83,7 +86,7 @@
             // 
             // bt_ClearAll
             // 
-            this.bt_ClearAll.Location = new System.Drawing.Point(56, 108);
+            this.bt_ClearAll.Location = new System.Drawing.Point(59, 154);
             this.bt_ClearAll.Margin = new System.Windows.Forms.Padding(4);
             this.bt_ClearAll.Name = "bt_ClearAll";
             this.bt_ClearAll.Size = new System.Drawing.Size(36, 28);
@@ -94,7 +97,7 @@
             // 
             // bt_Negote
             // 
-            this.bt_Negote.Location = new System.Drawing.Point(97, 108);
+            this.bt_Negote.Location = new System.Drawing.Point(100, 154);
             this.bt_Negote.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Negote.Name = "bt_Negote";
             this.bt_Negote.Size = new System.Drawing.Size(36, 28);
@@ -105,7 +108,7 @@
             // 
             // bt_Root
             // 
-            this.bt_Root.Location = new System.Drawing.Point(179, 108);
+            this.bt_Root.Location = new System.Drawing.Point(182, 154);
             this.bt_Root.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Root.Name = "bt_Root";
             this.bt_Root.Size = new System.Drawing.Size(36, 28);
@@ -116,7 +119,7 @@
             // 
             // bt_Pow
             // 
-            this.bt_Pow.Location = new System.Drawing.Point(179, 141);
+            this.bt_Pow.Location = new System.Drawing.Point(182, 187);
             this.bt_Pow.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Pow.Name = "bt_Pow";
             this.bt_Pow.Size = new System.Drawing.Size(36, 28);
@@ -127,7 +130,7 @@
             // 
             // bt_Multiple
             // 
-            this.bt_Multiple.Location = new System.Drawing.Point(138, 108);
+            this.bt_Multiple.Location = new System.Drawing.Point(141, 154);
             this.bt_Multiple.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Multiple.Name = "bt_Multiple";
             this.bt_Multiple.Size = new System.Drawing.Size(36, 28);
@@ -138,7 +141,7 @@
             // 
             // bt_9
             // 
-            this.bt_9.Location = new System.Drawing.Point(97, 141);
+            this.bt_9.Location = new System.Drawing.Point(100, 187);
             this.bt_9.Margin = new System.Windows.Forms.Padding(4);
             this.bt_9.Name = "bt_9";
             this.bt_9.Size = new System.Drawing.Size(36, 28);
@@ -149,7 +152,7 @@
             // 
             // bt_8
             // 
-            this.bt_8.Location = new System.Drawing.Point(56, 141);
+            this.bt_8.Location = new System.Drawing.Point(59, 187);
             this.bt_8.Margin = new System.Windows.Forms.Padding(4);
             this.bt_8.Name = "bt_8";
             this.bt_8.Size = new System.Drawing.Size(36, 28);
@@ -160,7 +163,7 @@
             // 
             // bt_7
             // 
-            this.bt_7.Location = new System.Drawing.Point(15, 141);
+            this.bt_7.Location = new System.Drawing.Point(18, 187);
             this.bt_7.Margin = new System.Windows.Forms.Padding(4);
             this.bt_7.Name = "bt_7";
             this.bt_7.Size = new System.Drawing.Size(36, 28);
@@ -171,7 +174,7 @@
             // 
             // bt_Add
             // 
-            this.bt_Add.Location = new System.Drawing.Point(138, 207);
+            this.bt_Add.Location = new System.Drawing.Point(141, 253);
             this.bt_Add.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Add.Name = "bt_Add";
             this.bt_Add.Size = new System.Drawing.Size(36, 28);
@@ -182,7 +185,7 @@
             // 
             // bt_3
             // 
-            this.bt_3.Location = new System.Drawing.Point(97, 207);
+            this.bt_3.Location = new System.Drawing.Point(100, 253);
             this.bt_3.Margin = new System.Windows.Forms.Padding(4);
             this.bt_3.Name = "bt_3";
             this.bt_3.Size = new System.Drawing.Size(36, 28);
@@ -193,7 +196,7 @@
             // 
             // bt_2
             // 
-            this.bt_2.Location = new System.Drawing.Point(56, 207);
+            this.bt_2.Location = new System.Drawing.Point(59, 253);
             this.bt_2.Margin = new System.Windows.Forms.Padding(4);
             this.bt_2.Name = "bt_2";
             this.bt_2.Size = new System.Drawing.Size(36, 28);
@@ -204,7 +207,7 @@
             // 
             // bt_1
             // 
-            this.bt_1.Location = new System.Drawing.Point(15, 207);
+            this.bt_1.Location = new System.Drawing.Point(18, 253);
             this.bt_1.Margin = new System.Windows.Forms.Padding(4);
             this.bt_1.Name = "bt_1";
             this.bt_1.Size = new System.Drawing.Size(36, 28);
@@ -215,7 +218,7 @@
             // 
             // bt_DivideRevers
             // 
-            this.bt_DivideRevers.Location = new System.Drawing.Point(179, 174);
+            this.bt_DivideRevers.Location = new System.Drawing.Point(182, 220);
             this.bt_DivideRevers.Margin = new System.Windows.Forms.Padding(4);
             this.bt_DivideRevers.Name = "bt_DivideRevers";
             this.bt_DivideRevers.Size = new System.Drawing.Size(36, 28);
@@ -226,7 +229,7 @@
             // 
             // bt_Divide
             // 
-            this.bt_Divide.Location = new System.Drawing.Point(138, 141);
+            this.bt_Divide.Location = new System.Drawing.Point(141, 187);
             this.bt_Divide.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Divide.Name = "bt_Divide";
             this.bt_Divide.Size = new System.Drawing.Size(36, 28);
@@ -237,7 +240,7 @@
             // 
             // bt_6
             // 
-            this.bt_6.Location = new System.Drawing.Point(97, 174);
+            this.bt_6.Location = new System.Drawing.Point(100, 220);
             this.bt_6.Margin = new System.Windows.Forms.Padding(4);
             this.bt_6.Name = "bt_6";
             this.bt_6.Size = new System.Drawing.Size(36, 28);
@@ -248,7 +251,7 @@
             // 
             // bt_5
             // 
-            this.bt_5.Location = new System.Drawing.Point(56, 174);
+            this.bt_5.Location = new System.Drawing.Point(59, 220);
             this.bt_5.Margin = new System.Windows.Forms.Padding(4);
             this.bt_5.Name = "bt_5";
             this.bt_5.Size = new System.Drawing.Size(36, 28);
@@ -259,7 +262,7 @@
             // 
             // bt_4
             // 
-            this.bt_4.Location = new System.Drawing.Point(15, 174);
+            this.bt_4.Location = new System.Drawing.Point(18, 220);
             this.bt_4.Margin = new System.Windows.Forms.Padding(4);
             this.bt_4.Name = "bt_4";
             this.bt_4.Size = new System.Drawing.Size(36, 28);
@@ -270,7 +273,7 @@
             // 
             // bt_Equal
             // 
-            this.bt_Equal.Location = new System.Drawing.Point(179, 207);
+            this.bt_Equal.Location = new System.Drawing.Point(182, 253);
             this.bt_Equal.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Equal.Name = "bt_Equal";
             this.bt_Equal.Size = new System.Drawing.Size(36, 61);
@@ -281,7 +284,7 @@
             // 
             // bt_Sub
             // 
-            this.bt_Sub.Location = new System.Drawing.Point(138, 240);
+            this.bt_Sub.Location = new System.Drawing.Point(141, 286);
             this.bt_Sub.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Sub.Name = "bt_Sub";
             this.bt_Sub.Size = new System.Drawing.Size(36, 28);
@@ -292,7 +295,7 @@
             // 
             // bt_Point
             // 
-            this.bt_Point.Location = new System.Drawing.Point(97, 240);
+            this.bt_Point.Location = new System.Drawing.Point(100, 286);
             this.bt_Point.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Point.Name = "bt_Point";
             this.bt_Point.Size = new System.Drawing.Size(36, 28);
@@ -303,7 +306,7 @@
             // 
             // bt_0
             // 
-            this.bt_0.Location = new System.Drawing.Point(15, 240);
+            this.bt_0.Location = new System.Drawing.Point(18, 286);
             this.bt_0.Margin = new System.Windows.Forms.Padding(4);
             this.bt_0.Name = "bt_0";
             this.bt_0.Size = new System.Drawing.Size(77, 28);
@@ -315,7 +318,7 @@
             // bt_Mod
             // 
             this.bt_Mod.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.bt_Mod.Location = new System.Drawing.Point(138, 174);
+            this.bt_Mod.Location = new System.Drawing.Point(141, 220);
             this.bt_Mod.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Mod.Name = "bt_Mod";
             this.bt_Mod.Size = new System.Drawing.Size(36, 28);
@@ -326,7 +329,7 @@
             // 
             // tb_RPNExpression
             // 
-            this.tb_RPNExpression.Location = new System.Drawing.Point(15, 46);
+            this.tb_RPNExpression.Location = new System.Drawing.Point(18, 79);
             this.tb_RPNExpression.Margin = new System.Windows.Forms.Padding(4);
             this.tb_RPNExpression.MaxLength = 20;
             this.tb_RPNExpression.Name = "tb_RPNExpression";
@@ -339,7 +342,7 @@
             // 
             // tb_Output
             // 
-            this.tb_Output.Location = new System.Drawing.Point(13, 77);
+            this.tb_Output.Location = new System.Drawing.Point(18, 123);
             this.tb_Output.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Output.MaxLength = 20;
             this.tb_Output.Name = "tb_Output";
@@ -350,11 +353,44 @@
             this.tb_Output.Text = "0";
             this.tb_Output.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label1.Location = new System.Drawing.Point(15, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Ввод выражения:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label2.Location = new System.Drawing.Point(15, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 13);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Форма ОПЗ:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label3.Location = new System.Drawing.Point(15, 106);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Результат:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 277);
+            this.ClientSize = new System.Drawing.Size(234, 322);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_Output);
             this.Controls.Add(this.tb_RPNExpression);
             this.Controls.Add(this.bt_Mod);
@@ -422,6 +458,9 @@
         private System.Windows.Forms.TextBox tb_Input;
         private System.Windows.Forms.TextBox tb_RPNExpression;
         private System.Windows.Forms.TextBox tb_Output;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
