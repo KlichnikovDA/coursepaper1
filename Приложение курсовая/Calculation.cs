@@ -55,7 +55,7 @@ namespace Приложение_курсовая
                         case "^":
                             if ((CalculationStack.Peek() == 0) && (SecondOperand < 0))
                                     return "Попытка деления на ноль.";
-                            if ((CalculationStack.Peek() < 0) && ((1 / SecondOperand) % 2 == 0))
+                            if (Double.IsNaN((Math.Pow(CalculationStack.Peek(), SecondOperand))))
                                 return "Невозможно вычислить.";
 
                             CalculationStack.Push(Math.Pow(CalculationStack.Pop(), SecondOperand));
@@ -63,7 +63,7 @@ namespace Приложение_курсовая
                         case "Root":
                             if ((CalculationStack.Peek() == 0) && (SecondOperand < 0))
                                 return "Попытка деления на ноль.";
-                            if ((CalculationStack.Peek() < 0) && (SecondOperand % 2 == 0))
+                            if (Double.IsNaN((Math.Pow(CalculationStack.Peek(), SecondOperand))))
                                 return "Невозможно вычислить.";
 
                             CalculationStack.Push(Math.Sign(CalculationStack.Peek()) *

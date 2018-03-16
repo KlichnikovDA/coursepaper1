@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tb_InOutPut = new System.Windows.Forms.TextBox();
+            this.tb_Input = new System.Windows.Forms.TextBox();
             this.bt_Backspace = new System.Windows.Forms.Button();
             this.bt_ClearAll = new System.Windows.Forms.Button();
             this.bt_Negote = new System.Windows.Forms.Button();
@@ -52,25 +52,27 @@
             this.bt_Point = new System.Windows.Forms.Button();
             this.bt_0 = new System.Windows.Forms.Button();
             this.bt_Mod = new System.Windows.Forms.Button();
+            this.tb_RPNExpression = new System.Windows.Forms.TextBox();
+            this.tb_Output = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // tb_InOutPut
+            // tb_Input
             // 
-            this.tb_InOutPut.Location = new System.Drawing.Point(15, 15);
-            this.tb_InOutPut.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_InOutPut.MaxLength = 20;
-            this.tb_InOutPut.Name = "tb_InOutPut";
-            this.tb_InOutPut.ReadOnly = true;
-            this.tb_InOutPut.Size = new System.Drawing.Size(200, 23);
-            this.tb_InOutPut.TabIndex = 23;
-            this.tb_InOutPut.TabStop = false;
-            this.tb_InOutPut.Text = "0";
-            this.tb_InOutPut.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tb_InOutPut.TextChanged += new System.EventHandler(this.tb_InOutPut_TextChanged);
+            this.tb_Input.Location = new System.Drawing.Point(15, 15);
+            this.tb_Input.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Input.MaxLength = 20;
+            this.tb_Input.Name = "tb_Input";
+            this.tb_Input.ReadOnly = true;
+            this.tb_Input.Size = new System.Drawing.Size(200, 23);
+            this.tb_Input.TabIndex = 23;
+            this.tb_Input.TabStop = false;
+            this.tb_Input.Text = "0";
+            this.tb_Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tb_Input.TextChanged += new System.EventHandler(this.tb_InOutPut_TextChanged);
             // 
             // bt_Backspace
             // 
-            this.bt_Backspace.Location = new System.Drawing.Point(15, 45);
+            this.bt_Backspace.Location = new System.Drawing.Point(15, 108);
             this.bt_Backspace.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Backspace.Name = "bt_Backspace";
             this.bt_Backspace.Size = new System.Drawing.Size(36, 28);
@@ -81,7 +83,7 @@
             // 
             // bt_ClearAll
             // 
-            this.bt_ClearAll.Location = new System.Drawing.Point(56, 45);
+            this.bt_ClearAll.Location = new System.Drawing.Point(56, 108);
             this.bt_ClearAll.Margin = new System.Windows.Forms.Padding(4);
             this.bt_ClearAll.Name = "bt_ClearAll";
             this.bt_ClearAll.Size = new System.Drawing.Size(36, 28);
@@ -92,7 +94,7 @@
             // 
             // bt_Negote
             // 
-            this.bt_Negote.Location = new System.Drawing.Point(97, 45);
+            this.bt_Negote.Location = new System.Drawing.Point(97, 108);
             this.bt_Negote.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Negote.Name = "bt_Negote";
             this.bt_Negote.Size = new System.Drawing.Size(36, 28);
@@ -103,7 +105,7 @@
             // 
             // bt_Root
             // 
-            this.bt_Root.Location = new System.Drawing.Point(179, 45);
+            this.bt_Root.Location = new System.Drawing.Point(179, 108);
             this.bt_Root.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Root.Name = "bt_Root";
             this.bt_Root.Size = new System.Drawing.Size(36, 28);
@@ -114,7 +116,7 @@
             // 
             // bt_Pow
             // 
-            this.bt_Pow.Location = new System.Drawing.Point(179, 78);
+            this.bt_Pow.Location = new System.Drawing.Point(179, 141);
             this.bt_Pow.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Pow.Name = "bt_Pow";
             this.bt_Pow.Size = new System.Drawing.Size(36, 28);
@@ -125,7 +127,7 @@
             // 
             // bt_Multiple
             // 
-            this.bt_Multiple.Location = new System.Drawing.Point(138, 45);
+            this.bt_Multiple.Location = new System.Drawing.Point(138, 108);
             this.bt_Multiple.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Multiple.Name = "bt_Multiple";
             this.bt_Multiple.Size = new System.Drawing.Size(36, 28);
@@ -136,7 +138,7 @@
             // 
             // bt_9
             // 
-            this.bt_9.Location = new System.Drawing.Point(97, 78);
+            this.bt_9.Location = new System.Drawing.Point(97, 141);
             this.bt_9.Margin = new System.Windows.Forms.Padding(4);
             this.bt_9.Name = "bt_9";
             this.bt_9.Size = new System.Drawing.Size(36, 28);
@@ -147,7 +149,7 @@
             // 
             // bt_8
             // 
-            this.bt_8.Location = new System.Drawing.Point(56, 78);
+            this.bt_8.Location = new System.Drawing.Point(56, 141);
             this.bt_8.Margin = new System.Windows.Forms.Padding(4);
             this.bt_8.Name = "bt_8";
             this.bt_8.Size = new System.Drawing.Size(36, 28);
@@ -158,7 +160,7 @@
             // 
             // bt_7
             // 
-            this.bt_7.Location = new System.Drawing.Point(15, 78);
+            this.bt_7.Location = new System.Drawing.Point(15, 141);
             this.bt_7.Margin = new System.Windows.Forms.Padding(4);
             this.bt_7.Name = "bt_7";
             this.bt_7.Size = new System.Drawing.Size(36, 28);
@@ -169,7 +171,7 @@
             // 
             // bt_Add
             // 
-            this.bt_Add.Location = new System.Drawing.Point(138, 144);
+            this.bt_Add.Location = new System.Drawing.Point(138, 207);
             this.bt_Add.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Add.Name = "bt_Add";
             this.bt_Add.Size = new System.Drawing.Size(36, 28);
@@ -180,7 +182,7 @@
             // 
             // bt_3
             // 
-            this.bt_3.Location = new System.Drawing.Point(97, 144);
+            this.bt_3.Location = new System.Drawing.Point(97, 207);
             this.bt_3.Margin = new System.Windows.Forms.Padding(4);
             this.bt_3.Name = "bt_3";
             this.bt_3.Size = new System.Drawing.Size(36, 28);
@@ -191,7 +193,7 @@
             // 
             // bt_2
             // 
-            this.bt_2.Location = new System.Drawing.Point(56, 144);
+            this.bt_2.Location = new System.Drawing.Point(56, 207);
             this.bt_2.Margin = new System.Windows.Forms.Padding(4);
             this.bt_2.Name = "bt_2";
             this.bt_2.Size = new System.Drawing.Size(36, 28);
@@ -202,7 +204,7 @@
             // 
             // bt_1
             // 
-            this.bt_1.Location = new System.Drawing.Point(15, 144);
+            this.bt_1.Location = new System.Drawing.Point(15, 207);
             this.bt_1.Margin = new System.Windows.Forms.Padding(4);
             this.bt_1.Name = "bt_1";
             this.bt_1.Size = new System.Drawing.Size(36, 28);
@@ -213,7 +215,7 @@
             // 
             // bt_DivideRevers
             // 
-            this.bt_DivideRevers.Location = new System.Drawing.Point(179, 111);
+            this.bt_DivideRevers.Location = new System.Drawing.Point(179, 174);
             this.bt_DivideRevers.Margin = new System.Windows.Forms.Padding(4);
             this.bt_DivideRevers.Name = "bt_DivideRevers";
             this.bt_DivideRevers.Size = new System.Drawing.Size(36, 28);
@@ -224,7 +226,7 @@
             // 
             // bt_Divide
             // 
-            this.bt_Divide.Location = new System.Drawing.Point(138, 78);
+            this.bt_Divide.Location = new System.Drawing.Point(138, 141);
             this.bt_Divide.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Divide.Name = "bt_Divide";
             this.bt_Divide.Size = new System.Drawing.Size(36, 28);
@@ -235,7 +237,7 @@
             // 
             // bt_6
             // 
-            this.bt_6.Location = new System.Drawing.Point(97, 111);
+            this.bt_6.Location = new System.Drawing.Point(97, 174);
             this.bt_6.Margin = new System.Windows.Forms.Padding(4);
             this.bt_6.Name = "bt_6";
             this.bt_6.Size = new System.Drawing.Size(36, 28);
@@ -246,7 +248,7 @@
             // 
             // bt_5
             // 
-            this.bt_5.Location = new System.Drawing.Point(56, 111);
+            this.bt_5.Location = new System.Drawing.Point(56, 174);
             this.bt_5.Margin = new System.Windows.Forms.Padding(4);
             this.bt_5.Name = "bt_5";
             this.bt_5.Size = new System.Drawing.Size(36, 28);
@@ -257,7 +259,7 @@
             // 
             // bt_4
             // 
-            this.bt_4.Location = new System.Drawing.Point(15, 111);
+            this.bt_4.Location = new System.Drawing.Point(15, 174);
             this.bt_4.Margin = new System.Windows.Forms.Padding(4);
             this.bt_4.Name = "bt_4";
             this.bt_4.Size = new System.Drawing.Size(36, 28);
@@ -268,7 +270,7 @@
             // 
             // bt_Equal
             // 
-            this.bt_Equal.Location = new System.Drawing.Point(179, 144);
+            this.bt_Equal.Location = new System.Drawing.Point(179, 207);
             this.bt_Equal.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Equal.Name = "bt_Equal";
             this.bt_Equal.Size = new System.Drawing.Size(36, 61);
@@ -279,7 +281,7 @@
             // 
             // bt_Sub
             // 
-            this.bt_Sub.Location = new System.Drawing.Point(138, 177);
+            this.bt_Sub.Location = new System.Drawing.Point(138, 240);
             this.bt_Sub.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Sub.Name = "bt_Sub";
             this.bt_Sub.Size = new System.Drawing.Size(36, 28);
@@ -290,7 +292,7 @@
             // 
             // bt_Point
             // 
-            this.bt_Point.Location = new System.Drawing.Point(97, 177);
+            this.bt_Point.Location = new System.Drawing.Point(97, 240);
             this.bt_Point.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Point.Name = "bt_Point";
             this.bt_Point.Size = new System.Drawing.Size(36, 28);
@@ -301,7 +303,7 @@
             // 
             // bt_0
             // 
-            this.bt_0.Location = new System.Drawing.Point(15, 177);
+            this.bt_0.Location = new System.Drawing.Point(15, 240);
             this.bt_0.Margin = new System.Windows.Forms.Padding(4);
             this.bt_0.Name = "bt_0";
             this.bt_0.Size = new System.Drawing.Size(77, 28);
@@ -313,7 +315,7 @@
             // bt_Mod
             // 
             this.bt_Mod.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.bt_Mod.Location = new System.Drawing.Point(138, 111);
+            this.bt_Mod.Location = new System.Drawing.Point(138, 174);
             this.bt_Mod.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Mod.Name = "bt_Mod";
             this.bt_Mod.Size = new System.Drawing.Size(36, 28);
@@ -322,11 +324,39 @@
             this.bt_Mod.UseVisualStyleBackColor = true;
             this.bt_Mod.Click += new System.EventHandler(this.bt_Mod_Click);
             // 
+            // tb_RPNExpression
+            // 
+            this.tb_RPNExpression.Location = new System.Drawing.Point(15, 46);
+            this.tb_RPNExpression.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_RPNExpression.MaxLength = 20;
+            this.tb_RPNExpression.Name = "tb_RPNExpression";
+            this.tb_RPNExpression.ReadOnly = true;
+            this.tb_RPNExpression.Size = new System.Drawing.Size(200, 23);
+            this.tb_RPNExpression.TabIndex = 24;
+            this.tb_RPNExpression.TabStop = false;
+            this.tb_RPNExpression.Text = "0";
+            this.tb_RPNExpression.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tb_Output
+            // 
+            this.tb_Output.Location = new System.Drawing.Point(13, 77);
+            this.tb_Output.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Output.MaxLength = 20;
+            this.tb_Output.Name = "tb_Output";
+            this.tb_Output.ReadOnly = true;
+            this.tb_Output.Size = new System.Drawing.Size(200, 23);
+            this.tb_Output.TabIndex = 25;
+            this.tb_Output.TabStop = false;
+            this.tb_Output.Text = "0";
+            this.tb_Output.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 212);
+            this.ClientSize = new System.Drawing.Size(234, 277);
+            this.Controls.Add(this.tb_Output);
+            this.Controls.Add(this.tb_RPNExpression);
             this.Controls.Add(this.bt_Mod);
             this.Controls.Add(this.bt_Equal);
             this.Controls.Add(this.bt_Sub);
@@ -350,7 +380,7 @@
             this.Controls.Add(this.bt_Negote);
             this.Controls.Add(this.bt_ClearAll);
             this.Controls.Add(this.bt_Backspace);
-            this.Controls.Add(this.tb_InOutPut);
+            this.Controls.Add(this.tb_Input);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
@@ -389,7 +419,9 @@
         private System.Windows.Forms.Button bt_Point;
         private System.Windows.Forms.Button bt_0;
         private System.Windows.Forms.Button bt_Mod;
-        private System.Windows.Forms.TextBox tb_InOutPut;
+        private System.Windows.Forms.TextBox tb_Input;
+        private System.Windows.Forms.TextBox tb_RPNExpression;
+        private System.Windows.Forms.TextBox tb_Output;
     }
 }
 

@@ -18,8 +18,8 @@ namespace Приложение_курсовая
         // Свойство доступа к выражению, записанному в tb_InOutPut
         public string Expression
         {
-            get { return tb_InOutPut.Text; }
-            set { tb_InOutPut.Text = value; }
+            get { return tb_Input.Text; }
+            set { tb_Input.Text = value; }
         }
 
         // Кнопки с цифрами и десятичным разделителем
@@ -143,7 +143,8 @@ namespace Приложение_курсовая
         private void bt_Equal_Click(object sender, EventArgs e)
         {
             InputExpression.FinishInput();
-            tb_InOutPut.Text = Calculation.CalculateExpression(Translation.TranslateExpression(tb_InOutPut.Text));
+            tb_RPNExpression.Text = Translation.TranslateExpression(tb_Input.Text);
+            tb_Output.Text = Calculation.CalculateExpression(tb_RPNExpression.Text);
         }
 
         #endregion Arithmetics
@@ -207,7 +208,7 @@ namespace Приложение_курсовая
                 case Keys.D8:
                     if (Control.ModifierKeys == Keys.Shift)
                         InputExpression.AddBinaryOperation("*");
-                    else InputExpression.AddFigure('0');
+                    else InputExpression.AddFigure('8');
                     break;
                 case Keys.NumPad8:
                     InputExpression.AddFigure('8');
@@ -255,7 +256,8 @@ namespace Приложение_курсовая
                     else
                     {
                         InputExpression.FinishInput();
-                        tb_InOutPut.Text = Calculation.CalculateExpression(Translation.TranslateExpression(tb_InOutPut.Text));
+                        tb_RPNExpression.Text = Translation.TranslateExpression(tb_Input.Text);
+                        tb_Output.Text = Calculation.CalculateExpression(tb_RPNExpression.Text);
                     }
                     break;
                 case Keys.Back:
@@ -269,13 +271,13 @@ namespace Приложение_курсовая
 
         private void tb_InOutPut_TextChanged(object sender, EventArgs e)
         {
-            if ((tb_InOutPut.Text != "Попытка деления на ноль.") && 
-                    (tb_InOutPut.Text.StartsWith("Попытка деления на ноль.")))
-                tb_InOutPut.Text = tb_InOutPut.Text.Remove(0, 24);
+            if ((tb_Input.Text != "Попытка деления на ноль.") && 
+                    (tb_Input.Text.StartsWith("Попытка деления на ноль.")))
+                tb_Input.Text = tb_Input.Text.Remove(0, 24);
 
-            if ((tb_InOutPut.Text != "Невозможно вычислить.") && 
-                (tb_InOutPut.Text.StartsWith("Невозможно вычислить.")))
-                tb_InOutPut.Text = tb_InOutPut.Text.Remove(0, 18);
+            if ((tb_Input.Text != "Невозможно вычислить.") && 
+                (tb_Input.Text.StartsWith("Невозможно вычислить.")))
+                tb_Input.Text = tb_Input.Text.Remove(0, 18);
         }
     }
 }
