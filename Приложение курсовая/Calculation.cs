@@ -63,7 +63,7 @@ namespace Приложение_курсовая
                         case "Root":
                             if ((CalculationStack.Peek() == 0) && (SecondOperand < 0))
                                 return "Попытка деления на ноль.";
-                            if (Double.IsNaN((Math.Pow(CalculationStack.Peek(), SecondOperand))))
+                            if (Double.IsNaN((Math.Pow(CalculationStack.Peek(), 1 / SecondOperand))))
                                 return "Невозможно вычислить.";
 
                             CalculationStack.Push(Math.Sign(CalculationStack.Peek()) *

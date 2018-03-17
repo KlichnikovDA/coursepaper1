@@ -266,12 +266,6 @@ namespace Приложение_курсовая
         {
             Expression = (Application.OpenForms[0] as MainForm).Expression;
 
-            // Если в текст-боксе записано сообщение об ошибке
-            if ((!OperationSigns.Contains(GetLastToken())) && (!FigureSigns.Contains(Expression[Expression.Length - 1])) &&
-                (Expression[Expression.Length - 1] != ')') && (Expression[Expression.Length - 1] != '('))
-                Clear();
-            else
-
             // Если удаляемый символ - )
             if (GetLastToken() == ")")
             {
@@ -303,7 +297,7 @@ namespace Приложение_курсовая
                 Expression = (Application.OpenForms[0] as MainForm).Expression = Expression.Remove(Expression.LastIndexOf(' '));
 
             if (Expression == "")
-                    Expression = (Application.OpenForms[0] as MainForm).Expression = "0";
+                Expression = (Application.OpenForms[0] as MainForm).Expression = "0";
         }
 
         // Очистить строку

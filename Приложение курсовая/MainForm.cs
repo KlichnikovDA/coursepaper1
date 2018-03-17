@@ -27,7 +27,7 @@ namespace Приложение_курсовая
 
         private void bt_0_Click(object sender, EventArgs e)
         {
-            if (tb_Input.Text.Length<tb_Input.MaxLength)
+            if (tb_Input.Text.Length < tb_Input.MaxLength)
                 InputExpression.AddFigure('0');
         }
 
@@ -164,7 +164,7 @@ namespace Приложение_курсовая
         {
             InputExpression.FinishInput();
             int i = 0;
-            while (i < OperationSigns.Length || !tb_Input.Text.Contains(OperationSigns[i]))
+            while (i < OperationSigns.Length && !tb_Input.Text.Contains(OperationSigns[i]))
                 i++;
             // Если выражение содержит знаки операций
             if (i < OperationSigns.Length)
@@ -194,6 +194,7 @@ namespace Приложение_курсовая
         private void bt_ClearAll_Click(object sender, EventArgs e)
         {
             InputExpression.Clear();
+            tb_RPNExpression.Text = tb_Output.Text = "0";
         }
 
         #endregion Edit
@@ -233,8 +234,8 @@ namespace Приложение_курсовая
                 case Keys.D6:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
                         if (Control.ModifierKeys == Keys.Shift)
-                        InputExpression.AddBinaryOperation("^");
-                    else InputExpression.AddFigure('6');
+                            InputExpression.AddBinaryOperation("^");
+                        else InputExpression.AddFigure('6');
                     break;
                 case Keys.NumPad6:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
@@ -248,8 +249,8 @@ namespace Приложение_курсовая
                 case Keys.D8:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
                         if (Control.ModifierKeys == Keys.Shift)
-                        InputExpression.AddBinaryOperation("*");
-                    else InputExpression.AddFigure('8');
+                            InputExpression.AddBinaryOperation("*");
+                        else InputExpression.AddFigure('8');
                     break;
                 case Keys.NumPad8:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
@@ -258,8 +259,8 @@ namespace Приложение_курсовая
                 case Keys.D9:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
                         if (Control.ModifierKeys == Keys.Shift)
-                        InputExpression.AddOpeningParenthesis();
-                    else InputExpression.AddFigure('9');
+                            InputExpression.AddOpeningParenthesis();
+                        else InputExpression.AddFigure('9');
                     break;
                 case Keys.NumPad9:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
@@ -268,8 +269,8 @@ namespace Приложение_курсовая
                 case Keys.D0:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
                         if (Control.ModifierKeys == Keys.Shift)
-                        InputExpression.AddClosingParenthesis();
-                    else InputExpression.AddFigure('0');
+                            InputExpression.AddClosingParenthesis();
+                        else InputExpression.AddFigure('0');
                     break;
                 case Keys.NumPad0:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
@@ -305,12 +306,12 @@ namespace Приложение_курсовая
                 case Keys.Oemplus:
                     if (tb_Input.Text.Length < tb_Input.MaxLength)
                         if (Control.ModifierKeys == Keys.Shift)
-                        InputExpression.AddBinaryOperation("+");
-                    else
-                    {
-                        InputExpression.FinishInput();
+                            InputExpression.AddBinaryOperation("+");
+                        else
+                        {
+                            InputExpression.FinishInput();
                             int i = 0;
-                            while (i < OperationSigns.Length || !tb_Input.Text.Contains(OperationSigns[i]))
+                            while (i < OperationSigns.Length && !tb_Input.Text.Contains(OperationSigns[i]))
                                 i++;
                             // Если выражение содержит знаки операций
                             if (i < OperationSigns.Length)
@@ -330,19 +331,9 @@ namespace Приложение_курсовая
                     break;
                 case Keys.Escape:
                     InputExpression.Clear();
+                    tb_RPNExpression.Text = tb_Output.Text = "0";
                     break;
             }
-        }
-
-        private void tb_InOutPut_TextChanged(object sender, EventArgs e)
-        {
-            if ((tb_Input.Text != "Попытка деления на ноль.") && 
-                    (tb_Input.Text.StartsWith("Попытка деления на ноль.")))
-                tb_Input.Text = tb_Input.Text.Remove(0, 24);
-
-            if ((tb_Input.Text != "Невозможно вычислить.") && 
-                (tb_Input.Text.StartsWith("Невозможно вычислить.")))
-                tb_Input.Text = tb_Input.Text.Remove(0, 18);
         }
 
         static string[] OperationSigns = new string[] { "+", "-", "*", "/", "^", "Mod", "Root" };

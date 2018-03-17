@@ -62,7 +62,7 @@ namespace Приложение_курсовая
             // Выталкиваем из стека в выходную все оставшиеся элементы
             while (TranslationStack.Count > 0)
                 RPNExpression += TranslationStack.Pop() + " ";
-            
+
             return RPNExpression;
         }
 
@@ -98,9 +98,9 @@ namespace Приложение_курсовая
                 return true;
             return false;
         }
-        
+
         // Массив цифр и разделяющей точки
-        static char[] FigureSigns = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '-'};
+        static char[] FigureSigns = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '-' };
 
         // Массив обозначений знаков операций
         static string[] OperationSigns = new string[] { "+", "-", "*", "/", "^", "Mod", "Root" };

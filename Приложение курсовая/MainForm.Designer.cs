@@ -63,7 +63,7 @@
             // 
             this.tb_Input.Location = new System.Drawing.Point(18, 32);
             this.tb_Input.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_Input.MaxLength = 20;
+            this.tb_Input.MaxLength = 30;
             this.tb_Input.Name = "tb_Input";
             this.tb_Input.ReadOnly = true;
             this.tb_Input.Size = new System.Drawing.Size(200, 23);
@@ -71,7 +71,6 @@
             this.tb_Input.TabStop = false;
             this.tb_Input.Text = "0";
             this.tb_Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tb_Input.TextChanged += new System.EventHandler(this.tb_InOutPut_TextChanged);
             // 
             // bt_Backspace
             // 
